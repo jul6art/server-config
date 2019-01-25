@@ -2,13 +2,10 @@ Configuration de serveurs
 ==
 Première connexion
 -
-
 ### [&#9756; Retour au menu](../README.md)
-
-
 Changer le mot de passe de l'utilisateur root
-
-    passwd root
+    
+    passwd root   
     
 Récupérer la clef ssh de notre machine
 
