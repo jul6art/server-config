@@ -3,4 +3,6 @@ Configuration de serveurs
 Modules
 -
 
-### > [Première connexion](modules/LOGIN.md)
+### [&#9758; Première connexion](modules/LOGIN.md)
+
+&copy; 2019 [VsWeb](https://vsweb.be) 

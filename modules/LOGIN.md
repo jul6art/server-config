@@ -3,7 +3,7 @@ Configuration de serveurs
 Première connexion
 -
 
-### > [Retour au menu](../README.md)
+### [&#9756; Retour au menu](../README.md)
 
 
 Changer le mot de passe de l'utilisateur root
@@ -31,7 +31,8 @@ Et ajouter les paramètres suivants
 Redémarrer le service ssh
 
     service ssh restart
-    
+   
+&copy; 2019 [VsWeb](https://vsweb.be) 
 
 
 
