@@ -3,7 +3,7 @@ Configuration de serveurs
 Fail 2 ban
 -
 ### [&#9756; Retour au menu](../README.md)
-![logo Fail2ban](https://doc.ubuntu-fr.org/_detail/fail2ban_logo.png "logo fail2ban")
+![logo Fail2ban](https://doc.ubuntu-fr.org/_media/fail2ban_logo.png "logo fail2ban")
 Installation
 
     sudo apt-get install fail2ban
@@ -68,20 +68,3 @@ Redémarrer
     sudo service fail2ban restart
    
 &copy; 2019 [VsWeb](https://vsweb.be) 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
