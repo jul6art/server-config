@@ -41,6 +41,8 @@ Avant d'intégrer un nouveau projet, il est préférable de remettre le reposito
 Pour intégrer un nouveau projet, il suffit de créer un hook sur github dans le projet
 
     https://IP.DU.SERVEUR:8080/bitbucket-hook/
+    
+Et créer un fichier build.xml dans le projet contenant des tâches ANT à appeler dans la configuration du projet
 
 Paramètres pour intégrer slack
 
