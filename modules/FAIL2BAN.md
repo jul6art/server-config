@@ -12,7 +12,7 @@ Configuration
     cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local && 
     nano /etc/fail2ban/jail.local
     
-modifier comme ceci
+Modifier comme ceci
 
 ### [DEFAULT]
 
@@ -59,6 +59,12 @@ modifier comme ceci
     port    = http,https
     filter  = php-url-fopen
     logpath = /var/log/apache*/*access.log
+    
+### activer aussi proftpd, postfix, ...
+
+Redémarrer
+
+    sudo service fail2ban restart
    
 &copy; 2019 [VsWeb](https://vsweb.be) 
 
