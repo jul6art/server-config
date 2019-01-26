@@ -15,7 +15,7 @@ SSL
     service apache2 restart &&
     apt-get install python-certbot-apache -y
     
-### mariadb
+#### mariadb
 
     sudo apt-get install mariadb-server &&
     service apache2 restart
@@ -28,7 +28,7 @@ to start mariadb
         flush privileges;
         quit
 
-### postgres
+#### postgres
 
     sudo apt-get install postgresql-server-dev-10 &&
     sudo apt-get install postgresql-10
@@ -37,5 +37,8 @@ to start postgres
 
     su postgres
     psql
+    
+### [&#9758; Enregistrements DNS](DNS.md)
+### [&#9758; Certificat SSL](SSL.md)
 
 &copy; 2019 [VsWeb](https://vsweb.be)

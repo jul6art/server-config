@@ -3,7 +3,7 @@ Configuration de serveurs
 Intégration continue
 -
 ### [&#9756; Retour au menu](../README.md)
-### Installation
+#### Installation
 Installation de ant
 
     sudo apt-get install ant
@@ -25,7 +25,7 @@ Tester le statut
 
     sudo ufw status
 
-### Configuration
+#### Configuration
 aller sur le port 8080 de l'IP du serveur dans le navigateur
 
     http://IP.DU.SERVEUR:8080

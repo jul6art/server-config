@@ -14,7 +14,7 @@ Configuration
     
 Modifier comme ceci
 
-### [DEFAULT]
+#### [DEFAULT]
 
     ignoreip = 127.0.0.1/8 ##YOUR_HOME_IP##
     bantime = 3600
@@ -25,7 +25,7 @@ Modifier comme ceci
     sendername = Fail2BanAlerts
     action = %(action_mwl)s
     
-### [apache]
+#### [apache]
 
     enabled  = true
     port     = http,https
@@ -33,11 +33,11 @@ Modifier comme ceci
     logpath  = /var/log/apache*/*error.log
     maxretry = 6
 
-### [apache-noscript]
+#### [apache-noscript]
 
     enabled  = true
 
-### [apache-overflows]
+#### [apache-overflows]
 
     enabled  = true
     port     = http,https
@@ -45,7 +45,7 @@ Modifier comme ceci
     logpath  = /var/log/apache*/*error.log
     maxretry = 2
 
-### [apache-badbots]
+#### [apache-badbots]
 
     enabled  = true
     port     = http,https
@@ -53,14 +53,14 @@ Modifier comme ceci
     logpath  = /var/log/apache*/*error.log
     maxretry = 2
 
-### [php-url-fopen]
+#### [php-url-fopen]
 
     enabled = true
     port    = http,https
     filter  = php-url-fopen
     logpath = /var/log/apache*/*access.log
     
-### activer aussi proftpd, postfix, ...
+#### activer aussi proftpd, postfix, ...
 
 Redémarrer
 

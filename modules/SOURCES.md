@@ -20,13 +20,14 @@ https://www.virtualmin.com/documentation/email/dependent
 https://www.virtualmin.com/node/27745
 #### Ajouter un nouveau serveur virtuel
 https://www.youtube.com/watch?v=2g_giizJpxY
-#### Change le port 10000 par défaut
+#### Changer le port 10000 par défaut
 https://www.youtube.com/watch?v=uO9qXYLF4GU
 #### SSL
 https://www.virtualmin.com/documentation/tutorial/how-to-add-an-ssl-certificate
 https://www.virtualmin.com/node/17261
 #### Quotas
-allez dans disk quotas et si rien, aller dans disk verification et activer quota user et groups dans /ext4 (root)
+> Aller dans disk quotas et si rien, aller dans disk verification et activer quota user et groups dans /ext4 (root)
+
 https://www.virtualmin.com/node/16058
 https://www.virtualmin.com/node/19823
 https://linux.die.net/man/8/quotacheck

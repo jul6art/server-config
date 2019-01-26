@@ -3,7 +3,7 @@ Configuration de serveurs
 Plusieurs PHP en parallèle avec FPM et proxy_fcgi
 -
 ### [&#9756; Retour au menu](../README.md)
-### Installation
+#### Installation
 
 	sudo apt-get -y install apt-transport-https lsb-release ca-certificates &&
 	sudo curl -ssL -o /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/	apt.gpg &&
@@ -38,7 +38,8 @@ Module apache proxy_fcgi
     a2enmod proxy_fcgi &&
     service apache2 restart
     
-### Configuration (à refaire pour chaque version de PHP avec des ports différents)
+#### Configuration
+> Refaire pour chaque version de PHP avec des ports différents
     
     nano /etc/php/5.6/fpm/pool.d/www.conf
 
@@ -50,7 +51,7 @@ par
 	
 	listen = 127.0.0.1:9056
 	
-### Utilisation dans un fichier de conf apache
+#### Utilisation dans un fichier de conf apache
 
     <FilesMatch "\.php$">
             Require all granted
