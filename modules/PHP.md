@@ -3,6 +3,8 @@ Configuration de serveurs
 Plusieurs PHP en parallèle avec FPM et proxy_fcgi
 -
 ### [&#9756; Retour au menu](../README.md)
+![logo PHP](http://php.net//images/logos/new-php-logo.svg "logo php")
+
 #### Installation
 
 	sudo apt-get -y install apt-transport-https lsb-release ca-certificates &&

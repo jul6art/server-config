@@ -3,6 +3,8 @@ Configuration de serveurs
 Installation Apache sans Virtualmin
 -
 ### [&#9756; Retour au menu](../README.md)
+![logo Apache](https://doc.ubuntu-fr.org/_media/apache_logo.png "logo apache")
+
 Installation
 
     sudo apt-get install apache2 -y &&

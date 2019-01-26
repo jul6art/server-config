@@ -3,6 +3,8 @@ Configuration de serveurs
 Python
 -
 ### [&#9756; Retour au menu](../README.md)
+![logo Python](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png "logo python")
+
 Installation
 
     sudo apt-get install python3-pip python3-dev python3-setuptools libjpeg-dev -y &&

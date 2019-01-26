@@ -3,6 +3,8 @@ Configuration de serveurs
 Installation Virtualmin
 -
 ### [&#9756; Retour au menu](../README.md)
+![logo Virtualmin](https://www.virtualmin.com/images/virtualmin-logo-220x45.png "logo virtualmin")
+
 #### Installation
 
 Téléchargement
