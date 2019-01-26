@@ -15,9 +15,9 @@ Pour se connecter au webmail, le login est user.domaine
 Pour utiliser un nouveau compte email dans thunderbird 
 >laisser config autodetectee mais changer l'identifiant
 
-    identifiant				    admin.vsweb
-    nom complet					Mon nom complet
-    adresse email				admin@vsweb.be
-    mot de passe				PASSWORD
+    identifiant                 admin.vsweb
+    nom complet                 Mon nom complet
+    adresse email               admin@vsweb.be
+    mot de passe                PASSWORD
 
 &copy; 2019 [VsWeb](https://vsweb.be)
