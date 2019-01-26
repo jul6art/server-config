@@ -35,5 +35,9 @@ https://www.howtoforge.com/community/threads/quotacheck-cannot-find-filesystem-t
 http://www.linux-france.org/article/man-fr/man8/mount-8.html
 https://www.virtualmin.com/node/14602
 https://www.virtualmin.com/node/35973
+### Redmine
+http://www.redmine.org/projects/redmine/wiki/RedmineInstall
+https://aeturnalus.com/software/installing-redmine-ubuntu-12-04-virtualmin/
+https://docs.bitnami.com/installer/apps/redmine/#linux
 
 &copy; 2019 [VsWeb](https://vsweb.be)
