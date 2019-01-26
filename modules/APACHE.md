@@ -14,5 +14,28 @@ SSL
     a2enmod ssl &&
     service apache2 restart &&
     apt-get install python-certbot-apache -y
+    
+### mariadb
+
+    sudo apt-get install mariadb-server &&
+    service apache2 restart
+
+to start mariadb
+
+    mariadb
+        use mysql;
+        update user set authentication_string=PASSWORD("root") where User='root';
+        flush privileges;
+        quit
+
+### postgres
+
+    sudo apt-get install postgresql-server-dev-10 &&
+    sudo apt-get install postgresql-10
+
+to start postgres
+
+    su postgres
+    psql
 
 &copy; 2019 [VsWeb](https://vsweb.be)
