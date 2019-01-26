@@ -12,17 +12,17 @@ https://itsfoss.com/add-apt-repository-command-not-found/
 https://linuxize.com/post/how-to-install-jenkins-on-ubuntu-18-04/
 https://www.youtube.com/watch?v=nNaR5Q_pIa4
 ### Virtualmin
-#### aide a l install
+#### Aide à l'installation
 https://www.youtube.com/watch?v=OBsDh2hxUYo
 https://lowendbox.com/blog/your-own-mail-server-with-virtualmin/#comment-647343
-#### sources pour corriger les erreurs
+#### Sources pour corriger les erreurs
 https://www.virtualmin.com/documentation/email/dependent
 https://www.virtualmin.com/node/27745
-#### add new site
+#### Ajouter un nouveau serveur virtuel
 https://www.youtube.com/watch?v=2g_giizJpxY
-#### change default 10000 port
+#### Change le port 10000 par défaut
 https://www.youtube.com/watch?v=uO9qXYLF4GU
-#### ssl
+#### SSL
 https://www.virtualmin.com/documentation/tutorial/how-to-add-an-ssl-certificate
 https://www.virtualmin.com/node/17261
 #### Quotas
