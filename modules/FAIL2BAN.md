@@ -3,7 +3,7 @@ Configuration de serveurs
 Fail 2 ban
 -
 ### [&#9756; Retour au menu](../README.md)
-![logo Fail2ban](https://goo.gl/images/DzGiDC "logo fail2ban")
+![logo Fail2ban](https://commons.wikimedia.org/wiki/File:Fail2ban_logo.png?uselang=fr "logo fail2ban")
 Installation
 
     sudo apt-get install fail2ban
