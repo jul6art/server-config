@@ -40,7 +40,11 @@ Module apache proxy_fcgi
     a2enmod proxy_fcgi &&
     service apache2 restart
     
-#### Configuration
+> Si virtualmin est installé, la dernière étape est d'installer les modules phpX.X-cgi et redémarrer le fpm
+
+> sudo apt-get install php5.6-cgi php7.0-cgi php7.1-cgi php7.2-cgi php7.3-cgi
+    
+#### Configuration (sauf si virtualmin est installé)
 > Refaire pour chaque version de PHP avec des ports différents
     
     nano /etc/php/5.6/fpm/pool.d/www.conf
@@ -53,7 +57,7 @@ par
 	
 	listen = 127.0.0.1:9056
 	
-#### Utilisation dans un fichier de conf apache
+#### Utilisation dans un fichier de conf apache (sauf si virtualmin est installé)
 
     <FilesMatch "\.php$">
             Require all granted
