@@ -6,7 +6,7 @@ Modules
 ### &#10103; [&#9758; Paquets de base](modules/SYSTEM.md)
 ### &#10104; [&#9758; Installation Apache sans Virtualmin](modules/APACHE.md)
 ### &#10105; [&#9758; Installation Virtualmin](modules/VIRTUALMIN.md)
-### &#10106; [&#9758; Plusieurs PHP en parallèle avec FPM et proxy_fcgi](modules/PHP.md)
+### &#10106; [&#9758; Plusieurs PHP en parallèle](modules/PHP.md)
 ### &#10107; [&#9758; Python](modules/PYTHON.md)
 ### &#10108; [&#9758; Intégration continue](modules/JENKINS.md)
 ### &#10109; [&#9758; Fail2ban](modules/FAIL2BAN.md)
