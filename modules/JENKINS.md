@@ -50,5 +50,31 @@ Paramètres pour intégrer slack
     jeton d'intégration: HiSrRvY3nZa7KNvvtgOA6rxg
     page de doc: https://IDENTIFIANT.slack.com/apps/manage
     message custom: *NOM DU PROJECT - BRANCH*
+    
+#### Redirection vers un nom de domaine
+Activer les modules apaches
+
+    sudo a2enmod headers proxy proxy_http ssl proxy_wstunnel rewrite
+    
+Redémarrer Apache
+
+    service apache2 restart
+    
+Fichier de configuration du serveur virtuel
+
+    <VirtualHost *:80>
+    	ServerAdmin admin@vsweb.be
+    
+    	ServerName jenkins.vsweb.be
+    	ServerAlias www.jenkins.vsweb.be
+    
+    	ProxyPreserveHost On
+        
+        ProxyPass / http://127.0.0.1:8080/
+        ProxyPassReverse / http://127.0.0.1:8080/
+    
+    	ErrorLog ${APACHE_LOG_DIR}/jenkins_error.log
+    	CustomLog ${APACHE_LOG_DIR}/jenkins_access.log combined
+    </VirtualHost>
    
 &copy; 2019 [VsWeb](https://vsweb.be)

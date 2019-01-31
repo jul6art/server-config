@@ -25,6 +25,7 @@ https://www.youtube.com/watch?v=uO9qXYLF4GU
 #### SSL
 https://www.virtualmin.com/documentation/tutorial/how-to-add-an-ssl-certificate
 https://www.virtualmin.com/node/17261
+https://certbot.eff.org/lets-encrypt/debianstretch-apache.html
 #### Quotas
 > Aller dans disk quotas et si rien, aller dans disk verification et activer quota user et groups dans /ext4 (root)
 

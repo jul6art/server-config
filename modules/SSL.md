@@ -33,16 +33,16 @@ Aller dans Server Configuration > Manage SSL > Let's ENCRYPT
 ### Installation sans Virtualmin
 
     a2enmod ssl &&
-    apt-get install python-certbot-apache -t jessie-backports &&
-    certbot --apache certonly -d vsweb.be -d www.vsweb.be
+    apt-get install certbot python-certbot-apache &&
+    sudo certbot --apache
     
 > Choisir ceux a activer
 
-> Renouveler tous les 90 jours
+> Tester le renouvellement AUTOMATIQUE
 
-    certbot renew
+    sudo certbot renew --dry-run
 
-Exemple de configuration
+Exemple de configuration (avec le module apache, elle est adaptée AUTOMATIQUEMENT)
 
     <VirtualHost *:80 *:443>                     						
             ServerAdmin admin@vsweb.be
