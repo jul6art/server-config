@@ -1,6 +1,6 @@
 Configuration de serveurs
 ==
-Plusieurs PHP en parallèle avec FPM et proxy_fcgi
+Plusieurs PHP en parallèle
 -
 ### [&#9756; Retour au menu](../README.md)
 ![logo PHP](http://php.net//images/logos/new-php-logo.svg "logo php")
