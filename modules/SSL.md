@@ -43,6 +43,9 @@ Aller dans Server Configuration > Manage SSL > Let's ENCRYPT
     sudo certbot renew --dry-run
 
 Exemple de configuration (avec le module apache, elle est adaptée AUTOMATIQUEMENT)
+#### Problèmes récurrents
+> *:80 ou *:443 ne marche pas mais IP_DU_SERVEUR:80 oui
+> EN cas de proxy, pour Jenkins par exemple, la version 443 redirige vers https://127.0.0.1:8080 au lieu de http://127.0.0.1:8080
 
     <VirtualHost *:80 *:443>                     						
             ServerAdmin admin@vsweb.be
