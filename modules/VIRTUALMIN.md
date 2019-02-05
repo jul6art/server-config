@@ -68,6 +68,10 @@ Synchroniser les horloges
     puis webmin/hardware/system time/update timezone (europe/brussels)
     puis webmin/others/php configuration/other settings et changer la timezone pour les 3 lignes du tableau (manage)
     VERIFIER L HEURE EXACTE APRES LA CREATION DU PREMIER SERVEUR VIRTUEL (pour corriger un serveur: virtualmin/choix du serveur/services/phpX configuration et changer timezone)
+    
+Restauration en ligne de commandes
+
+    virtualmin restore-domain --source /path/FILE.tar.gz --all-domains --all-features
 
 
 
