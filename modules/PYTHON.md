@@ -9,7 +9,7 @@ Python
 
     sudo apt-get install python3-pip python3-dev python3-setuptools libjpeg-dev -y &&
     sudo apt-get install libtiff5-dev libjpeg62-turbo-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk -y &&
-    sudo apt-get install libapache2-mod-wsgi-py3 python3-mysqldb -y && 
+    sudo apt-get install libapache2-mod-wsgi-py3 python3-mysqldb default-libmysqlclient-dev -y && 
     pip3 install virtualenv mysqlclient
     
 #### Déploiement d'un projet Django
