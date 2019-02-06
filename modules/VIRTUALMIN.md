@@ -72,6 +72,10 @@ Synchroniser les horloges
 Restauration en ligne de commandes
 
     virtualmin restore-domain --source /path/FILE.tar.gz --all-domains --all-features
+    
+Corriger problèmes d'accès DB
+ 
+> Aller dans webmin > servers > mysql > databases privilèges et sélectionner la liste des droits
 
 
 
