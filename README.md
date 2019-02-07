@@ -12,5 +12,6 @@ Modules
 ### &#10109; [&#9758; Fail2ban](modules/FAIL2BAN.md)
 ### &#10110; [&#9758; Serveur de mails (sauf si Virtualmin est installé)](modules/MAIL.md)
 ### &#10111; [&#9758; Site de support Redmine](modules/REDMINE.md)
+### [&#9758; Migration complète d'un serveur](modules/MIGRATE.md)
 ### [&#9758; Ressources utilisées pour compléter cette documentation](modules/SOURCES.md)
 &copy; 2019 [VsWeb](https://vsweb.be) 
