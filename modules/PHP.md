@@ -16,16 +16,17 @@ Plusieurs PHP en parallèle
 	
 Modules PHP
 
-    sudo apt-get install php5.6-gd php5.6-mcrypt php5.6-curl php5.6-opcache php5.6-mysql php5.6-pgsql &&
-    sudo apt-get install php7.0-gd php7.0-mcrypt php7.0-curl php7.0-opcache php7.0-mysql php7.0-pgsql &&
-    sudo apt-get install php7.1-gd php7.1-mcrypt php7.1-curl php7.1-opcache php7.1-mysql php7.1-pgsql &&
-    sudo apt-get install php7.2-gd php7.2-curl php7.2-opcache php7.2-mysql php7.2-pgsql &&
-    sudo apt-get install php7.3-gd php7.3-curl php7.3-opcache php7.3-mysql php7.3-pgsql
+	sudo apt-get install php5.6-gd php5.6-mcrypt php5.6-curl php5.6-opcache php5.6-mysql php5.6-pgsql &&
+	sudo apt-get install php7.0-gd php7.0-mcrypt php7.0-curl php7.0-opcache php7.0-mysql php7.0-pgsql &&
+	sudo apt-get install php7.1-gd php7.1-mcrypt php7.1-curl php7.1-opcache php7.1-mysql php7.1-pgsql &&
+	sudo apt-get install php7.2-gd php7.2-curl php7.2-opcache php7.2-mysql php7.2-pgsql &&
+	sudo apt-get install php7.3-gd php7.3-curl php7.3-opcache php7.3-mysql php7.3-pgsql
     
 Manipulation d'images
 
     sudo apt-get install jpegoptim optipng pngquant gifsicle &&
-    sudo apt-get install npm && sudo npm install -g svgo
+    curl -sL https://deb.nodesource.com/setup_11.x | bash -
+    sudo apt-get install -y nodejs npm && sudo npm install -g svgo
 
 Composer
 
