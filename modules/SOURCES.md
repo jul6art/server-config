@@ -63,4 +63,7 @@ http://wiki.linuxwall.info/doku.php/fr:ressources:dossiers:postfix:authentificat
 http://www.tutoriels-video.fr/installation-et-configuration-dun-serveur-dedie-debia/
 https://www.bisolweb.com/tutoriels/serveur-vps-ovh-partie-3-installation-postfix-saslauthd-courier-clamav-roundcube-champ-spf/
 
+### Migration de machines
+https://lowendbox.com/blog/how-to-migrate-a-hosted-server-in-5-easy-steps-with-rsync/
+
 &copy; 2019 [VsWeb](https://vsweb.be)
