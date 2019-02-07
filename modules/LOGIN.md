@@ -14,7 +14,7 @@ Récupérer la clef ssh de notre machine
 Ajouter la clef au serveur
 
     mkdir ~/.ssh && 
-    sudo nano ~/.ssh/authorized_keys
+    nano ~/.ssh/authorized_keys
     
 Désactiver le timeout ssh
 
