@@ -32,8 +32,7 @@ to start mariadb
 
 #### postgres
 
-    sudo apt-get install postgresql-server-dev-10 &&
-    sudo apt-get install postgresql-10
+    sudo apt-get install postgresql-9.4 postgresql-client-9.4
 
 to start postgres
 
