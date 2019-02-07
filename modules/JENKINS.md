@@ -36,6 +36,8 @@ installer les plugins suivants
 
     php, ansicolor, slack notification, bitbucket plugin
     
+Créer de nouveaux credentials avec votre login/mot de passe github ou bitbucket
+    
 Avant d'intégrer un nouveau projet, il est préférable de remettre le repository Git à zéro pour éviter les dossiers .git trop volumineux
 
 Pour intégrer un nouveau projet, il suffit de créer un hook sur github dans le projet
@@ -43,6 +45,12 @@ Pour intégrer un nouveau projet, il suffit de créer un hook sur github dans le
     https://IP.DU.SERVEUR:8080/bitbucket-hook/
     
 Et créer un fichier build.xml dans le projet contenant des tâches ANT à appeler dans la configuration du projet
+
+Paramètres (créer un nouveau projet vide)
+
+    - définir la source git
+    - définir comme projet bitbucket avec la source et la branche
+    - définir les tâches ant: build et deploy (+ paramètres)
 
 Paramètres pour intégrer slack
 
