@@ -17,16 +17,20 @@ Installation
     source install.sh 
     
 #### Configuration
+Dans webmin > webmin configuration > ports and ip address
+
+    changer les deux 10000 by 8000
+    
+Activer DKIM
+
+    dans email settings > domainKeys identified mail
+    
 > now you can install packages updates and re-check the config, correcting the errors like this
 
 The mailman queue processor /usr/lib/mailman/bin/qrunner is not running on your system.
 
     System Settings -> Features and Plugins, et vous pouvez désactiver "Mailman feature"
     et "ENABLE SSL WEBSITE"
-
-Dans webmin > webmin configuration > ports and ip address
-
-    changer les deux 10000 by 8000
  
 Mots-clefs: map, dependant
 Sender Dependent Outgoing IP Address
