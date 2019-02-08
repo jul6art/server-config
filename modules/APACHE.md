@@ -30,9 +30,16 @@ to start mariadb
         flush privileges;
         quit
 
-#### postgres
+#### postgres 11
 
-    sudo apt-get install postgresql-9.4 postgresql-client-9.4
+    wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+    RELEASE=$(lsb_release -cs)
+    echo "deb http://apt.postgresql.org/pub/repos/apt/ ${RELEASE}"-pgdg main | sudo tee  /etc/apt/sources.list.d/pgdg.list
+    
+> Vérifier que le fichier "cat /etc/apt/sources.list.d/pgdg.list" contient bien "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main"
+
+    sudo apt update
+    sudo apt -y install postgresql-11
 
 to start postgres
 
