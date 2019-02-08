@@ -54,9 +54,9 @@ Redémarrer Apache
 
 Corrections
 
-    chown support:www-data /usr/share/redmine -R
-    chown support:www-data /usr/share/redmine/Gemfile.lock
-    chown support:www-data /etc/redmine -R
+    chown -rf support:www-data /usr/share/redmine
+    chown -rf support:www-data /usr/share/redmine/Gemfile.lock
+    chown -rf support:www-data /etc/redmine
 
 Plugins
  
