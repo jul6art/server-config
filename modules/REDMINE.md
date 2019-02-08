@@ -57,6 +57,8 @@ Corrections
     chown -rf support:www-data /usr/share/redmine
     chown -rf support:www-data /usr/share/redmine/Gemfile.lock
     chown -rf support:www-data /etc/redmine
+    
+> En cas d'erreur sur certaines pages, chmod -R 777 /usr/share/redmine/tmp
 
 Plugins
  
