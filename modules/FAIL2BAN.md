@@ -67,5 +67,7 @@ Modifier comme ceci
 Redémarrer
 
     sudo service fail2ban restart
+    
+> En cas d'erreur "Failed to start fail2ban.service: Unit fail2ban.service is masked", lancer la commande "systemctl unmask fail2ban" avant de redémarrer
    
 &copy; 2019 [VsWeb](https://vsweb.be) 
