@@ -35,7 +35,7 @@ Et ajouter
 
     production:
      email_delivery:
-      delivery_method: :sendmail
+      delivery_method: sendmail
  
 Puis 
 
