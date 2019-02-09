@@ -14,7 +14,11 @@ https://itsfoss.com/add-apt-repository-command-not-found/
 ### Jenkins
 https://linuxize.com/post/how-to-install-jenkins-on-ubuntu-18-04/
 
+http://afonsof.com/jenkins-material-theme/
+
 https://www.youtube.com/watch?v=nNaR5Q_pIa4
+
+https://www.youtube.com/watch?v=jRDoB2HqGTM
 ### Virtualmin
 #### Aide à l'installation
 https://www.youtube.com/watch?v=OBsDh2hxUYo
