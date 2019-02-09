@@ -5,7 +5,7 @@ Python
 ### [&#9756; Retour au menu](../README.md)
 ![logo Python](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png "logo python")
 
-#### Installation
+#### Installation (SAUF POUR UN PROJET DJANGO)
 
     sudo apt-get install python3-pip python3-dev python3-setuptools libjpeg-dev -y &&
     sudo apt-get install libtiff5-dev libjpeg62-turbo-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk -y &&
@@ -24,11 +24,12 @@ Python
 
     mysql -u root
     
+    python3 manage.py makemigrations
     python3 manage.py migrate
 
-    myprojectenv/bin/python3 manage.py collectstatic
+    python3 manage.py collectstatic
 
-    myprojectenv/bin/python3 manage.py runserver 0.0.0.0:8000
+    python3 manage.py runserver 0.0.0.0:8000
 
     deactivate
     
