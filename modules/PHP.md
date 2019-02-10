@@ -16,11 +16,11 @@ Plusieurs PHP en parallèle
 	
 Modules PHP
 
-	sudo apt-get install php5.6-gd php5.6-mbstring php5.6-mcrypt php5.6-curl php5.6-opcache php5.6-mysql php5.6-pgsql php5.6-xml -y &&
-	sudo apt-get install php7.0-gd php7.0-mbstring php7.0-mcrypt php7.0-curl php7.0-opcache php7.0-mysql php7.0-pgsql php7.0-xml -y &&
-	sudo apt-get install php7.1-gd php7.1-mbstring php7.1-mcrypt php7.1-curl php7.1-opcache php7.1-mysql php7.1-pgsql php7.1-xml -y &&
-	sudo apt-get install php7.2-gd php7.2-mbstring php7.2-curl php7.2-opcache php7.2-mysql php7.2-pgsql php7.2-xml -y &&
-	sudo apt-get install php7.3-gd php7.3-mbstring php7.3-curl php7.3-opcache php7.3-mysql php7.3-pgsql php7.3-xml -y
+	sudo apt-get install php5.6-gd php5.6-mbstring php5.6-mcrypt php5.6-curl php5.6-opcache php5.6-mysql php5.6-pgsql php5.6-xml php5.6-apc -y &&
+	sudo apt-get install php7.0-gd php7.0-mbstring php7.0-mcrypt php7.0-curl php7.0-opcache php7.0-mysql php7.0-pgsql php7.0-xml php7.0-apc -y &&
+	sudo apt-get install php7.1-gd php7.1-mbstring php7.1-mcrypt php7.1-curl php7.1-opcache php7.1-mysql php7.1-pgsql php7.1-xml php7.1-apc -y &&
+	sudo apt-get install php7.2-gd php7.2-mbstring php7.2-curl php7.2-opcache php7.2-mysql php7.2-pgsql php7.2-xml php7.2-apc -y &&
+	sudo apt-get install php7.3-gd php7.3-mbstring php7.3-curl php7.3-opcache php7.3-mysql php7.3-pgsql php7.3-xml php7.3-apc -y
     
 Manipulation d'images
 
