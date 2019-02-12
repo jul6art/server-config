@@ -45,6 +45,18 @@ Aller dans Server Configuration > Manage SSL > Let's ENCRYPT
 > Documentation pour générer un certificat wildcard
 
     https://www.nikio.io/infrastructure/lets-encrypt-wildcard-certificate-with-certbot/
+    
+    wget https://dl.google.com/go/go1.11.5.linux-amd64.tar.gz
+  cd ~/
+  tar -C /usr/local -xzf go1.11.5.linux-amd64.tar.gz
+  export PATH=$PATH:/usr/local/go/bin
+  go version
+  go get github.com/joohoi/acme-dns/...
+  rm go1.11.5.linux-amd64.tar.gz
+  sudo mv go/bin/acme-dns /usr/local/bin/acme-dns
+  rm -rf go
+  which acme-dns
+  
  
 Exemple de configuration (avec le module apache, elle est adaptée AUTOMATIQUEMENT)
 #### Problèmes récurrents
