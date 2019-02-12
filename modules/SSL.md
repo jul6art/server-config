@@ -42,13 +42,9 @@ Aller dans Server Configuration > Manage SSL > Let's ENCRYPT
 
     sudo certbot renew --dry-run
     
-> Commande pour générer un certificat wildcard
+> Documentation pour générer un certificat wildcard
 
-    certbot certonly --manual -d deepweb.be -d *.deepweb.be
-    
-> Commande pour le renouveler automatiquement
-
-    printf 'yes\n\n\n' | certbot certonly --manual -d deepweb.be -d *.deepweb.be
+    https://www.nikio.io/infrastructure/lets-encrypt-wildcard-certificate-with-certbot/
  
 Exemple de configuration (avec le module apache, elle est adaptée AUTOMATIQUEMENT)
 #### Problèmes récurrents
