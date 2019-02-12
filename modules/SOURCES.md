@@ -38,6 +38,8 @@ https://www.virtualmin.com/documentation/tutorial/how-to-add-an-ssl-certificate
 https://www.virtualmin.com/node/17261
 
 https://certbot.eff.org/lets-encrypt/debianstretch-apache.html
+
+https://www.nikio.io/infrastructure/lets-encrypt-wildcard-certificate-with-certbot/
 #### Quotas
 > Aller dans disk quotas et si rien, aller dans disk verification et activer quota user et groups dans /ext4 (root)
 
