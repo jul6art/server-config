@@ -38,10 +38,18 @@ Aller dans Server Configuration > Manage SSL > Let's ENCRYPT
     
 > Choisir ceux a activer
 
-> Tester le renouvellement AUTOMATIQUE
+> Tester le renouvellement AUTOMATIQUE (fait par le CRON de virtualmin ?)
 
     sudo certbot renew --dry-run
+    
+> Commande pour générer un certificat wildcard
 
+    certbot certonly --manual -d deepweb.be -d *.deepweb.be
+    
+> Commande pour le renouveler automatiquement
+
+    printf 'yes\n\n\n' | certbot certonly --manual -d deepweb.be -d *.deepweb.be
+ 
 Exemple de configuration (avec le module apache, elle est adaptée AUTOMATIQUEMENT)
 #### Problèmes récurrents
 > *:80 ou *:443 ne marche pas mais IP_DU_SERVEUR:80 oui
