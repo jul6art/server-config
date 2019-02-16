@@ -5,8 +5,11 @@ Serveur de mails
 ### [&#9756; Retour au menu](../README.md)
 
 
-###! LIEN POUR TESTER SERVEUR EMAIL
+###! LIENS POUR TESTER SERVEUR EMAIL
+
 https://mxtoolbox.com
+
+https://www.mail-tester.com/
 
 
 ip: 212.47.251.31
