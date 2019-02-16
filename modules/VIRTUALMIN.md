@@ -27,6 +27,10 @@ Activer DKIM
     
 > now you can install packages updates and re-check the config, correcting the errors like this
 
+This virtual server is using the mod_php or FPM execution mode for PHP, such does not allow per-directory version selection.
+
+    Dans virtualmin -> Server configuration -> Website options -> choisir fcgid
+
 The mailman queue processor /usr/lib/mailman/bin/qrunner is not running on your system.
 
     System Settings -> Features and Plugins, et vous pouvez désactiver "Mailman feature"
