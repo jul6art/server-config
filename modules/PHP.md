@@ -24,7 +24,7 @@ Modules PHP
 	
 Configuration (php.ini)
 
-	expose: Off     (to not display PHP version in headers)
+	expose_php = Off     (to not display PHP version in headers)
     
 Manipulation d'images
 
