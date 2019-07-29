@@ -21,6 +21,10 @@ Modules PHP
 	sudo apt-get install php7.1-intl php7.1-soap php7.1-gd php7.1-mbstring php7.1-mcrypt php7.1-curl php7.1-zip vphp7.1-opcache php7.1-mysql php7.1-pgsql php7.1-xml php7.1-apc -y &&
 	sudo apt-get install php7.2-intl php7.2-soap php7.2-gd php7.2-mbstring php7.2-curl php7.2-zip php7.2-opcache php7.2-mysql php7.2-pgsql php7.2-xml php7.2-apc -y &&
 	sudo apt-get install php7.3-intl php7.3-soap php7.3-gd php7.3-mbstring php7.3-curl php7.3-zip php7.3-opcache php7.3-mysql php7.3-pgsql php7.3-xml php7.3-apc -y
+	
+Configuration (php.ini)
+
+	expose: Off     (to not display PHP version in headers)
     
 Manipulation d'images
 
