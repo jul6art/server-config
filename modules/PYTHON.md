@@ -50,7 +50,7 @@ deactivate
     
 Créer vhost
 
-```console
+```apacheconfig
 <VirtualHost *:80>
         ServerAdmin admin@vsweb.be
         ServerName lauto-resultat.com
