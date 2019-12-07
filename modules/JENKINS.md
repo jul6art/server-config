@@ -81,7 +81,9 @@ Redirection vers un nom de domaine
 ----------------------------------
 Activer les modules apaches
 
-    sudo a2enmod headers proxy proxy_http ssl proxy_wstunnel rewrite
+```console
+sudo a2enmod headers proxy proxy_http ssl proxy_wstunnel rewrite
+```
     
 Redémarrer Apache
 
@@ -91,7 +93,7 @@ service apache2 restart
     
 Fichier de configuration du serveur virtuel
 
-```console
+```apacheconfig
 <VirtualHost *:80>
     ServerAdmin admin@vsweb.be
 

@@ -27,21 +27,26 @@ reverse dns ipv4 : 31.1-24.251.47.212.in-addr.arpa
 Ajouter un compte mail pour un domaine
 
     sql dans table postfix
+    
+```sql
     INSERT INTO `domaines` ( `domaine` , `etat` ) VALUES ('VOTRE_DOMAINE.com', '1');
     INSERT INTO `comptes` ( `email` , `password` , `quota` , `etat` , `imap` , `pop3` ) VALUES 
     ('contact@VOTRE_DOMAINE.com', ENCRYPT( 'VOTRE_PASS_MAIL' ) , '0', '1', '1', '1');
+```
     
-    telnet 127.0.0.1 25
-    ehlo domaine.extension
-    mail from: <adresse@domaine.exten>
-    rcpt to: <adresse@domaine.exten>
-    data
-    hello world
-    .
-    quit
-    
-    
-    newaliases
+```console
+telnet 127.0.0.1 25
+ehlo domaine.extension
+mail from: <adresse@domaine.exten>
+rcpt to: <adresse@domaine.exten>
+data
+hello world
+.
+quit
+
+
+newaliases
+```
 
 
 > Si erreurs, restarter les services ou voir plus bas
@@ -61,8 +66,10 @@ dans le fichier /etc/courier/authmysqlrc
 
 > Pour pouvoir ajouter un compte mail, AJOUTER DOMAINE DANS TABLE DOMAINE puis compte dans la table compte
 
-    INSERT INTO `comptes` ( `email` , `password` , `quota` , `etat` , `imap` , `pop3` ) VALUES 
-    ('contact@VOTRE_DOMAINE.com', ENCRYPT( 'VOTRE_PASS_MAIL' ) , '0', '1', '1', '1');
+```sql
+INSERT INTO `comptes` ( `email` , `password` , `quota` , `etat` , `imap` , `pop3` ) VALUES 
+('contact@VOTRE_DOMAINE.com', ENCRYPT( 'VOTRE_PASS_MAIL' ) , '0', '1', '1', '1');
+```
 
 Puis ajouter le domaine dans /etc/postfix/main.cf et creer le dossier du domaine dans /var/spool/vmail et corrige erreur de dossiers manquants dans /var/spool/vmail et 
 
@@ -100,36 +107,38 @@ Créer les tables
 
     mysql -u root -p
     
-        CREATE USER 'postfix'@ 'localhost' IDENTIFIED BY 'VOTRE_PASS_POSTFIX_MYSQL';
-        GRANT USAGE ON * . * TO 'postfix'@'localhost' IDENTIFIED BY 'VOTRE_PASS_POSTFIX_MYSQL';
-        CREATE DATABASE `postfix` ;
-        GRANT ALL PRIVILEGES ON `postfix` . * TO 'postfix'@ 'localhost';
-        FLUSH PRIVILEGES;
+```sql
+CREATE USER 'postfix'@ 'localhost' IDENTIFIED BY 'VOTRE_PASS_POSTFIX_MYSQL';
+GRANT USAGE ON * . * TO 'postfix'@'localhost' IDENTIFIED BY 'VOTRE_PASS_POSTFIX_MYSQL';
+CREATE DATABASE `postfix` ;
+GRANT ALL PRIVILEGES ON `postfix` . * TO 'postfix'@ 'localhost';
+FLUSH PRIVILEGES;
 
-        USE postfix;
+USE postfix;
 
-        CREATE TABLE `domaines` (
-        `domaine` varchar(255) NOT NULL default '',
-        `etat` tinyint(1) NOT NULL default '1',
-        PRIMARY KEY  (`domaine`)
-        ) ENGINE=MyISAM;
+CREATE TABLE `domaines` (
+`domaine` varchar(255) NOT NULL default '',
+`etat` tinyint(1) NOT NULL default '1',
+PRIMARY KEY  (`domaine`)
+) ENGINE=MyISAM;
 
-        CREATE TABLE `comptes` (
-        `email` varchar(255) NOT NULL default '',
-        `password` varchar(255) NOT NULL default '',
-        `quota` int(10) NOT NULL default '0',
-        `etat` tinyint(1) NOT NULL default '1',
-        `imap` tinyint(1) NOT NULL default '1',
-        `pop3` tinyint(1) NOT NULL default '1',
-        PRIMARY KEY  (`email`)
-        ) ENGINE=MyISAM;
-        
-        CREATE TABLE `alias` (
-        `source` varchar(255) NOT NULL default '',
-        `destination` text NOT NULL,
-        `etat` tinyint(1) NOT NULL default '1',
-        PRIMARY KEY  (`source`)
-        ) ENGINE=MyISAM;
+CREATE TABLE `comptes` (
+`email` varchar(255) NOT NULL default '',
+`password` varchar(255) NOT NULL default '',
+`quota` int(10) NOT NULL default '0',
+`etat` tinyint(1) NOT NULL default '1',
+`imap` tinyint(1) NOT NULL default '1',
+`pop3` tinyint(1) NOT NULL default '1',
+PRIMARY KEY  (`email`)
+) ENGINE=MyISAM;
+
+CREATE TABLE `alias` (
+`source` varchar(255) NOT NULL default '',
+`destination` text NOT NULL,
+`etat` tinyint(1) NOT NULL default '1',
+PRIMARY KEY  (`source`)
+) ENGINE=MyISAM;
+```
 
  
 Configuration de Postfix
@@ -295,12 +304,16 @@ Dans un premier temps, insérez des données dans les tables MySQL postfix.
 
 On insère un domaine valide qui sera géré par postfix:
 
-    INSERT INTO `domaines` ( `domaine` , `etat` ) VALUES ('VOTRE_DOMAINE.com', '1');
+```sql
+INSERT INTO `domaines` ( `domaine` , `etat` ) VALUES ('VOTRE_DOMAINE.com', '1');
+```
 
 Et on créé un compte virtuel:
 
-    INSERT INTO `comptes` ( `email` , `password` , `quota` , `etat` , `imap` , `pop3` ) VALUES 
-    ('contact@VOTRE_DOMAINE.com', ENCRYPT( 'VOTRE_PASS_MAIL' ) , '0', '1', '1', '1');
+```sql
+INSERT INTO `comptes` ( `email` , `password` , `quota` , `etat` , `imap` , `pop3` ) VALUES 
+('contact@VOTRE_DOMAINE.com', ENCRYPT( 'VOTRE_PASS_MAIL' ) , '0', '1', '1', '1');
+```
 
 Nous allons voir si postfix fonctionne correctement, pour cela installez telnet (apt-get install telnet) si vous ne l'avez pas par défaut.
 
@@ -418,9 +431,12 @@ Téléchargez roundcube sur votre serveur: http://roundcube.net/downloads
 Votre webmail est en place, il faut maintenant le configurer.
 
     mysql -u root -p
-        CREATE DATABASE roundcubemail;
-        GRANT ALL PRIVILEGES ON roundcubemail.* TO roundcube@localhost  IDENTIFIED BY 'PASS_ROUNDCUBE';
-        quit
+
+```sql
+CREATE DATABASE roundcubemail;
+GRANT ALL PRIVILEGES ON roundcubemail.* TO roundcube@localhost  IDENTIFIED BY 'PASS_ROUNDCUBE';
+quit
+```
 
 Notre base de données roundcubemail est créée, il faut maintenant importer les tables
 
@@ -457,7 +473,10 @@ Avec roundcube, vous pouvez envoyer et recevoir des messages avec votre adresse 
 > ! Si serveur chez scaleway, penser à activer le smtp dans la section security et si impossible de se connecter, verifier dans les logs qu il n y a pas une erreur dans la requete sql de login
 
 sinon, AJOUTER UNE COLONNE A LA TABLE Comptes
+
+```sql
 ALTER TABLE `postfix`.`comptes` ADD COLUMN `name` VARCHAR(255) NULL DEFAULT NULL;
+```
 
 > DEBUG
 
