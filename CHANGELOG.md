@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [Released]
 ----------
 
-[1.1.0] - 2019-12-07
+[1.1.0](https://github.com/jul6art/server-config/compare/0.0.1...1.1.0) - 2019-12-07
 --------------------
 
 ### Added
