@@ -32,7 +32,7 @@ a2enmod passenger rewrite
 
 Fichier de configuration
 
-```console
+```apacheconfig
 <VirtualHost your-ip-here:80>
   SuexecUserGroup "#1010" "#1010"
   ServerName redmine.example.com
