@@ -1,17 +1,33 @@
+<p align="center">
+    <a href="https://vsweb.be"><img src="https://vsweb.be/userfiles/images/14548837631453228685logo.png" alt="logo VsWeb"></a>
+</p>
+
 Configuration de serveurs
-==
+=========================
+
+<p align="center">
+    <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
+    <a href="https://github.com/jul6art/symfony-skeleton" target="_blank"><img src="https://img.shields.io/static/v1?label=stable&message=v1&color=success" alt="Version"></a>
+</p>
+
 Modules
--
-### &#10102; [&#9758; Première connexion](modules/LOGIN.md)
-### &#10103; [&#9758; Paquets de base](modules/SYSTEM.md)
-### &#10104; [&#9758; Installation Apache sans Virtualmin](modules/APACHE.md)
-### &#10105; [&#9758; Installation Virtualmin](modules/VIRTUALMIN.md)
-### &#10106; [&#9758; Plusieurs PHP en parallèle](modules/PHP.md)
-### &#10107; [&#9758; Python](modules/PYTHON.md)
-### &#10108; [&#9758; Intégration continue](modules/JENKINS.md)
-### &#10109; [&#9758; Fail2ban](modules/FAIL2BAN.md)
-### &#10110; [&#9758; Serveur de mails (sauf si Virtualmin est installé)](modules/MAIL.md)
-### &#10111; [&#9758; Site de support Redmine](modules/REDMINE.md)
-### [&#9758; Migration complète d'un serveur](modules/MIGRATE.md)
-### [&#9758; Ressources utilisées pour compléter cette documentation](modules/SOURCES.md)
-&copy; 2019 [VsWeb](https://vsweb.be) 
+-------
+* [Première connexion](modules/LOGIN.md)
+* [Paquets de base](modules/SYSTEM.md)
+* Installation [Apache](modules/APACHE.md) sans Virtualmin
+* Installation [Virtualmin](modules/VIRTUALMIN.md)
+* Plusieurs [PHP](modules/PHP.md) en parallèle
+* [Python](modules/PYTHON.md)
+* [Intégration continue](modules/JENKINS.md)
+* [Fail2ban](modules/FAIL2BAN.md)
+* [Serveur de mails](modules/MAIL.md) (sauf si Virtualmin est installé)
+* Site de support [Redmine](modules/REDMINE.md)
+* [Migration](modules/MIGRATE.md) complète d'un serveur
+* [Ressources](modules/SOURCES.md) utilisées pour compléter cette documentation
+
+License
+-------
+
+The VsWeb Server Config is open-sourced software licensed under the MIT license.
+
+&copy; 2019 [VsWeb](https://vsweb.be)
