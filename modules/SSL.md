@@ -107,7 +107,7 @@ Problèmes récurrents
 
 * En cas de proxy, pour Jenkins par exemple, la version 443 redirige vers https://127.0.0.1:8080 au lieu de http://127.0.0.1:8080
 
-    ```console
+    ```apacheconfig
     <VirtualHost *:80 *:443>                     						
             ServerAdmin admin@vsweb.be
             ServerName www.vsweb.be
