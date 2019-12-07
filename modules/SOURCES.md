@@ -114,6 +114,6 @@ https://lowendbox.com/blog/how-to-migrate-a-hosted-server-in-5-easy-steps-with-r
 License
 -------
 
-The VsWeb Server Config is open-sourced software licensed under the MIT license.
+The VsWeb Server Config is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 &copy; 2019 [VsWeb](https://vsweb.be)

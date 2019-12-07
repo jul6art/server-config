@@ -107,7 +107,7 @@ Charge datas or test img, emails and git repos (beware of disk quota for user su
 License
 -------
 
-The VsWeb Server Config is open-sourced software licensed under the MIT license.
+The VsWeb Server Config is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 &copy; 2019 [VsWeb](https://vsweb.be) 
 
