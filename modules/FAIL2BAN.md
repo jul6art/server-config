@@ -1,21 +1,37 @@
+<p align="center">
+    <a href="https://vsweb.be"><img src="https://vsweb.be/userfiles/images/14548837631453228685logo.png" alt="logo VsWeb"></a>
+</p>
+
+<p align="center">
+    <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
+    <a href="https://github.com/jul6art/symfony-skeleton" target="_blank"><img src="https://img.shields.io/static/v1?label=stable&message=v1&color=success" alt="Version"></a>
+</p>
+
 Configuration de serveurs
-==
+=========================
 Fail 2 ban
--
-### [&#9756; Retour au menu](../README.md)
+----------
+
 ![logo Fail2ban](https://doc.ubuntu-fr.org/_media/fail2ban_logo.png "logo fail2ban")
 
 Installation
+------------
 
-    sudo apt-get install fail2ban
+```console
+sudo apt-get install fail2ban
+```
     
 Configuration
+-------------
 
-    cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local && 
-    nano /etc/fail2ban/jail.local
+```console
+cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local && 
+nano /etc/fail2ban/jail.local
+```
     
 Modifier comme ceci
 
+```console
 #### [DEFAULT]
 
     ignoreip = 127.0.0.1/8 ##YOUR_HOME_IP##
@@ -63,11 +79,21 @@ Modifier comme ceci
     logpath = /var/log/apache*/*access.log
     
 #### activer aussi proftpd, postfix, ...
+```
 
 Redémarrer
+----------
 
-    sudo service fail2ban restart
+```console
+sudo service fail2ban restart
+```
     
-> En cas d'erreur "Failed to start fail2ban.service: Unit fail2ban.service is masked", lancer la commande "systemctl unmask fail2ban" avant de redémarrer
+> :warning: En cas d'erreur "Failed to start fail2ban.service: Unit fail2ban.service is masked", lancer la commande "systemctl unmask fail2ban" avant de redémarrer
    
+
+License
+-------
+
+The VsWeb Server Config is open-sourced software licensed under the MIT license.
+
 &copy; 2019 [VsWeb](https://vsweb.be) 

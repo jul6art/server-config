@@ -1,9 +1,19 @@
+<p align="center">
+    <a href="https://vsweb.be"><img src="https://vsweb.be/userfiles/images/14548837631453228685logo.png" alt="logo VsWeb"></a>
+</p>
+
+<p align="center">
+    <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
+    <a href="https://github.com/jul6art/symfony-skeleton" target="_blank"><img src="https://img.shields.io/static/v1?label=stable&message=v1&color=success" alt="Version"></a>
+</p>
+
 Configuration de serveurs
-==
+=========================
 Ressources utilisées pour compléter cette documentation
--
-### [&#9756; Retour au menu](../README.md)
-### php
+-------------------------------------------------------
+
+php
+---
 https://github.com/oerdnj/deb.sury.org/wiki/Managing-Multiple-Versions
 
 https://pehapkari.cz/blog/2017/03/27/multiple-php-versions-the-easy-way/
@@ -11,7 +21,9 @@ https://pehapkari.cz/blog/2017/03/27/multiple-php-versions-the-easy-way/
 https://www.virtualmin.com/documentation/web/multiplephp
 
 https://itsfoss.com/add-apt-repository-command-not-found/
-### Jenkins
+
+Jenkins
+-------
 https://linuxize.com/post/how-to-install-jenkins-on-ubuntu-18-04/
 
 http://afonsof.com/jenkins-material-theme/
@@ -19,20 +31,32 @@ http://afonsof.com/jenkins-material-theme/
 https://www.youtube.com/watch?v=nNaR5Q_pIa4
 
 https://www.youtube.com/watch?v=jRDoB2HqGTM
-### Virtualmin
-#### Aide à l'installation
+
+Virtualmin
+----------
+
+Aide à l'installation
+
 https://www.youtube.com/watch?v=OBsDh2hxUYo
 
 https://lowendbox.com/blog/your-own-mail-server-with-virtualmin/#comment-647343
-#### Sources pour corriger les erreurs
+
+Sources pour corriger les erreurs
+
 https://www.virtualmin.com/documentation/email/dependent
 
 https://www.virtualmin.com/node/27745
-#### Ajouter un nouveau serveur virtuel
+
+Ajouter un nouveau serveur virtuel
+
 https://www.youtube.com/watch?v=2g_giizJpxY
-#### Changer le port 10000 par défaut
+
+Changer le port 10000 par défaut
+
 https://www.youtube.com/watch?v=uO9qXYLF4GU
-#### SSL
+
+SSL
+
 https://www.virtualmin.com/documentation/tutorial/how-to-add-an-ssl-certificate
 
 https://www.virtualmin.com/node/17261
@@ -40,7 +64,9 @@ https://www.virtualmin.com/node/17261
 https://certbot.eff.org/lets-encrypt/debianstretch-apache.html
 
 https://www.nikio.io/infrastructure/lets-encrypt-wildcard-certificate-with-certbot/
-#### Quotas
+
+Quotas
+
 > Aller dans disk quotas et si rien, aller dans disk verification et activer quota user et groups dans /ext4 (root)
 
 https://www.virtualmin.com/node/16058
@@ -56,13 +82,19 @@ http://www.linux-france.org/article/man-fr/man8/mount-8.html
 https://www.virtualmin.com/node/14602
 
 https://www.virtualmin.com/node/35973
-### Redmine
+
+Redmine
+-------
+
 http://www.redmine.org/projects/redmine/wiki/RedmineInstall
 
 https://aeturnalus.com/software/installing-redmine-ubuntu-12-04-virtualmin/
 
 https://docs.bitnami.com/installer/apps/redmine/#linux
-### Serveur de mail
+
+Serveur de mail
+---------------
+
 https://www.digitalocean.com/community/tutorials/how-to-configure-a-mail-server-using-postfix-dovecot-mysql-and-spamassassin
 
 https://doc.ubuntu-fr.org/postfix_mysql_tls_sasl
@@ -73,7 +105,15 @@ http://www.tutoriels-video.fr/installation-et-configuration-dun-serveur-dedie-de
 
 https://www.bisolweb.com/tutoriels/serveur-vps-ovh-partie-3-installation-postfix-saslauthd-courier-clamav-roundcube-champ-spf/
 
-### Migration de machines
+Migration de machines
+---------------------
+
 https://lowendbox.com/blog/how-to-migrate-a-hosted-server-in-5-easy-steps-with-rsync/
+
+
+License
+-------
+
+The VsWeb Server Config is open-sourced software licensed under the MIT license.
 
 &copy; 2019 [VsWeb](https://vsweb.be)

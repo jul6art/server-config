@@ -1,22 +1,38 @@
+<p align="center">
+    <a href="https://vsweb.be"><img src="https://vsweb.be/userfiles/images/14548837631453228685logo.png" alt="logo VsWeb"></a>
+</p>
+
+<p align="center">
+    <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
+    <a href="https://github.com/jul6art/symfony-skeleton" target="_blank"><img src="https://img.shields.io/static/v1?label=stable&message=v1&color=success" alt="Version"></a>
+</p>
+
 Configuration de serveurs
-==
+=========================
 Installation Virtualmin
--
-### [&#9756; Retour au menu](../README.md)
+-----------------------
+
 ![logo Virtualmin](https://www.virtualmin.com/images/virtualmin-logo-220x45.png "logo virtualmin")
 
-#### Installation
+Installation
+------------
 
 Téléchargement
 
-    wget http://software.virtualmin.com/gpl/scripts/install.sh
+```console
+wget http://software.virtualmin.com/gpl/scripts/install.sh
+```
 
 Installation 
 > dites oui à la question posée lors de l'installation et exemple de hostname défini si demandé: vsweb01.vsweb.be
 
-    source install.sh 
+```console
+source install.sh 
+```
     
-#### Configuration
+Configuration
+-------------
+
 Dans webmin > webmin configuration > ports and ip address
 
     changer les deux 10000 by 8000
@@ -39,57 +55,76 @@ The mailman queue processor /usr/lib/mailman/bin/qrunner is not running on your 
 Mots-clefs: map, dependant
 Sender Dependent Outgoing IP Address
 
-    nano /etc/postfix/main.cf
+```console
+nano /etc/postfix/main.cf
+```
 
 > Chercher la ligne "sender_dependent_default_transport_maps" . Ajouter cette ligne si elle n'existe pas encore
 
-    sender_dependent_default_transport_maps = hash:/etc/postfix/dependent
+```console
+sender_dependent_default_transport_maps = hash:/etc/postfix/dependent
+```
     
 Permettre les emails smtp depuis Django
 
-    smtpd_sender_restrictions = permit_mynetworks, warn_if_reject
+```console
+smtpd_sender_restrictions = permit_mynetworks, warn_if_reject
+```
     
 Adapter pour respecter ceci
     
-    myhostname = ##REVERSE_DNS_IPV4##
-    myorigin = ##REVERSE_DNS_IPV4##
-    mydestination = localhost.localdomain, localhost, ##REVERSE_DNS_IPV4##
-    relayhost =
-    mynetworks = 127.0.0.0/8, ##IPV4_PUBLIQUE_SERVEUR## [::1]/18
-    mailbox_size_limit = 0
-    recipient_delimiter = +
-    inet_interfaces = all
-    inet_protocols = ipv4
+```console
+myhostname = ##REVERSE_DNS_IPV4##
+myorigin = ##REVERSE_DNS_IPV4##
+mydestination = localhost.localdomain, localhost, ##REVERSE_DNS_IPV4##
+relayhost =
+mynetworks = 127.0.0.0/8, ##IPV4_PUBLIQUE_SERVEUR## [::1]/18
+mailbox_size_limit = 0
+recipient_delimiter = +
+inet_interfaces = all
+inet_protocols = ipv4
+```
 
 Commandes à lancer
 
-    touch /etc/postfix/dependent && postmap hash:/etc/postfix/dependent &&
-    a2dissite 000-default.conf &&
-    service postfix restart && service apache2 restart
+```console
+touch /etc/postfix/dependent && postmap hash:/etc/postfix/dependent &&
+a2dissite 000-default.conf &&
+service postfix restart && service apache2 restart
+```
     
 > Change les ips en cas de problème
 
 
 Synchroniser les horloges
+-------------------------
 
-    verifier l heure systeme
-    puis webmin/hardware/system time/update timezone (europe/brussels)
-    puis webmin/others/php configuration/other settings et changer la timezone pour les 3 lignes du tableau (manage)
-    VERIFIER L HEURE EXACTE APRES LA CREATION DU PREMIER SERVEUR VIRTUEL (pour corriger un serveur: virtualmin/choix du serveur/services/phpX configuration et changer timezone)
+verifier l heure systeme
+puis webmin/hardware/system time/update timezone (europe/brussels)
+puis webmin/others/php configuration/other settings et changer la timezone pour les 3 lignes du tableau (manage)
+
+> :warning: VERIFIER L HEURE EXACTE APRES LA CREATION DU PREMIER SERVEUR VIRTUEL (pour corriger un serveur: virtualmin/choix du serveur/services/phpX configuration et changer timezone)
     
 Restauration en ligne de commandes
 
-    virtualmin restore-domain --source /path/FILE.tar.gz --all-domains --all-features
+```console
+virtualmin restore-domain --source /path/FILE.tar.gz --all-domains --all-features
+```
     
 Corriger problèmes d'accès DB
  
 > Aller dans webmin > servers > mysql > databases privilèges et sélectionner la liste des droits
 
 
+Modèles de fichiers de [conf Apache](VHOST.md)
+[Enregistrements DNS](DNS.md)
+Ajouter un [serveur virtuel](NEW_VIRTUAL_SERVER.md)
+[Certificat SSL](SSL.md)
 
-### [&#9758; Modèles de fichiers de conf Apache](VHOST.md)
-### [&#9758; Enregistrements DNS](DNS.md)
-### [&#9758; Ajouter un serveur virtuel](NEW_VIRTUAL_SERVER.md)
-### [&#9758; Certificat SSL](SSL.md)
+
+License
+-------
+
+The VsWeb Server Config is open-sourced software licensed under the MIT license.
 
 &copy; 2019 [VsWeb](https://vsweb.be)
