@@ -29,9 +29,9 @@ Ajouter un compte mail pour un domaine
     sql dans table postfix
     
 ```sql
-    INSERT INTO `domaines` ( `domaine` , `etat` ) VALUES ('VOTRE_DOMAINE.com', '1');
-    INSERT INTO `comptes` ( `email` , `password` , `quota` , `etat` , `imap` , `pop3` ) VALUES 
-    ('contact@VOTRE_DOMAINE.com', ENCRYPT( 'VOTRE_PASS_MAIL' ) , '0', '1', '1', '1');
+INSERT INTO `domaines` ( `domaine` , `etat` ) VALUES ('VOTRE_DOMAINE.com', '1');
+INSERT INTO `comptes` ( `email` , `password` , `quota` , `etat` , `imap` , `pop3` ) VALUES 
+('contact@VOTRE_DOMAINE.com', ENCRYPT( 'VOTRE_PASS_MAIL' ) , '0', '1', '1', '1');
 ```
     
 ```console
