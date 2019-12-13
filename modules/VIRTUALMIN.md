@@ -24,7 +24,7 @@ wget http://software.virtualmin.com/gpl/scripts/install.sh
 ```
 
 Installation 
-> dites oui à la question posée lors de l'installation et exemple de hostname défini si demandé: vsweb01.vsweb.be
+> dites oui à la question posée lors de l'installation et exemple de hostname défini si demandé: devinthehood01.devinthehood.com
 
 ```console
 source install.sh 

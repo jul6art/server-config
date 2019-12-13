@@ -95,10 +95,10 @@ Fichier de configuration du serveur virtuel
 
 ```apacheconfig
 <VirtualHost *:80>
-    ServerAdmin admin@vsweb.be
+    ServerAdmin admin@devinthehood.com
 
-    ServerName jenkins.vsweb.be
-    ServerAlias www.jenkins.vsweb.be
+    ServerName jenkins.devinthehood.com
+    ServerAlias www.jenkins.devinthehood.com
 
     ProxyPreserveHost On
     

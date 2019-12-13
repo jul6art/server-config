@@ -39,7 +39,7 @@ Modifier comme ceci
     findtime = 3600   
     maxretry = 6      
     mta = mail                     
-    destemail = admin@vsweb.be
+    destemail = admin@devinthehood.com
     sendername = Fail2BanAlerts
     action = %(action_mwl)s
     

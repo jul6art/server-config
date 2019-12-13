@@ -52,7 +52,7 @@ Créer vhost
 
 ```apacheconfig
 <VirtualHost *:80>
-        ServerAdmin admin@vsweb.be
+        ServerAdmin admin@devinthehood.com
         ServerName lauto-resultat.com
         ServerAlias www.lauto-resultat.com
         ErrorLog /var/www/html/logs/error.log

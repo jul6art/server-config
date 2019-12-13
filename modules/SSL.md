@@ -23,7 +23,7 @@ Générer les fichiers key et csr et copier le contenu du fichier CSR généré 
 > nom de domaine = COMMON NAME (sans www)
 	
 ```console
-mkdir /home/ssl && openssl req -new -newkey rsa:2048 -nodes -keyout /home/ssl/vsweb.key -out /home/ssl/vsweb.csr
+mkdir /home/ssl && openssl req -new -newkey rsa:2048 -nodes -keyout /home/ssl/devinthehood.key -out /home/ssl/devinthehood.csr
 mkdir /home/ssl && openssl req -new -newkey rsa:2048 -nodes -keyout /home/ssl/lauto-resultat.key -out /home/ssl/lauto-resultat.csr
 ```
 
@@ -109,18 +109,18 @@ Problèmes récurrents
 
     ```apacheconfig
     <VirtualHost *:80 *:443>                     						
-            ServerAdmin admin@vsweb.be
-            ServerName www.vsweb.be
-            ServerAlias vsweb.be               					
-            DocumentRoot /home/vsweb/public_html/server
-            ErrorLog /home/vsweb/logs/error.log
-            CustomLog /home/vsweb/logs/access.log combined
+            ServerAdmin admin@devinthehood.com
+            ServerName www.devinthehood.com
+            ServerAlias devinthehood.com               					
+            DocumentRoot /home/devinthehood/public_html/server
+            ErrorLog /home/devinthehood/logs/error.log
+            CustomLog /home/devinthehood/logs/access.log combined
             
             SSLEngine on									
             SSLOptions +StrictRequire							
-            SSLCertificateChainFile /etc/letsencrypt/live/vsweb.be/chain.pem		
-            SSLCertificateFile /etc/letsencrypt/live/vsweb.be/cert.pem		
-            SSLCertificateKeyFile /etc/letsencrypt/live/vsweb.be/privkey.pem		
+            SSLCertificateChainFile /etc/letsencrypt/live/devinthehood.com/chain.pem		
+            SSLCertificateFile /etc/letsencrypt/live/devinthehood.com/cert.pem		
+            SSLCertificateKeyFile /etc/letsencrypt/live/devinthehood.com/privkey.pem		
             RewriteEngine On								
             RewriteCond %{HTTPS} off							
             RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}				

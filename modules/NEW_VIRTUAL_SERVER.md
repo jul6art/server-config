@@ -20,15 +20,15 @@ Configurez le mail pour ce serveur virtuel
 
 Pour se connecter au webmail, le login est user.server_name
 
-    ex: **admin.vsweb** pour une adresse admin@vsweb.be
+    ex: **admin.devinthehood** pour une adresse admin@devinthehood.com
 
 Pour utiliser un nouveau compte email dans thunderbird 
 
 > laisser config autodétectée mais changer l'identifiant
 
-    identifiant                 admin.vsweb
+    identifiant                 admin.devinthehood
     nom complet                 Mon nom complet
-    adresse email               admin@vsweb.be
+    adresse email               admin@devinthehood.com
     mot de passe                PASSWORD
 
 
