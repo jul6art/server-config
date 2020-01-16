@@ -27,6 +27,7 @@ Installation de Java
 ```console
 sudo apt-get install openjdk-8-jdk
 ```
+> Or JDK 11 until debian 10
     
 Installation de Jenkins
 
