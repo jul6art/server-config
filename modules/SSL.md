@@ -126,6 +126,22 @@ Problèmes récurrents
             RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}				
     </VirtualHost>
     ```
+    
+* Migrer un certificat d'un serveur nginx vers un serveur apache, ouvrir le fichier référencé en tant que SSLCertificateFile dans la conf nginx et le couper en deux, la partie certificat vers un fichier server.crt et la partie key vers un fichier server.key, référencer ensuite ces deux fichiers dans le fichier de conf apache du projet tel que:
+
+```console
+<VirtualHost *:443>
+	DocumentRoot ...
+	ServerName ...
+
+	<Directory ...
+	</Directory>
+
+	SSLEngine on
+	SSLCertificateFile /path/to/server.crt
+	SSLCertificateKeyFile /path/to/server.key
+</VirtualHost>
+```
 
 License
 -------
