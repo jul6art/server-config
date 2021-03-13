@@ -35,7 +35,7 @@ Mariadb
 -------
 
 ```console
-sudo apt-get install mariadb-server &&
+sudo apt-get install mariadb-server -y &&
 service apache2 restart
 ```
 
