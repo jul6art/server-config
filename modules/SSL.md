@@ -22,14 +22,14 @@ Générer les fichiers key et csr et copier le contenu du fichier CSR généré 
 
 > nom de domaine = COMMON NAME (sans www)
 	
-```console
+```shell
 mkdir /home/ssl && openssl req -new -newkey rsa:2048 -nodes -keyout /home/ssl/devinthehood.key -out /home/ssl/devinthehood.csr
 mkdir /home/ssl && openssl req -new -newkey rsa:2048 -nodes -keyout /home/ssl/lauto-resultat.key -out /home/ssl/lauto-resultat.csr
 ```
 
 Aller dans Server Configuration > Manage SSL > New Certificate
 
-```console
+```shell
 put certificate text and PRIVATE KEY TEXT 
 active the certificate for usermin and webmin
 ```
@@ -39,13 +39,13 @@ Certificat gratuit
 
 Aller dans Server Configuration > Manage SSL > Let's ENCRYPT
 
-```console
+```shell
 add all subdomains (without and with WWW) but NOT *.domaine.ext
 ```
 		
 Modifier ensuite le fichier de conf
 
-```console
+```shell
 nano /etc/sites-enabled/site.conf
 ```
     
@@ -57,7 +57,7 @@ nano /etc/sites-enabled/site.conf
 Installation sans Virtualmin
 ----------------------------
 
-```console
+```shell
 a2enmod ssl &&
 apt-get install certbot python-certbot-apache &&
 sudo certbot --apache
@@ -67,7 +67,7 @@ Choisir ceux a activer
 
 Tester le renouvellement AUTOMATIQUE (fait par le CRON de virtualmin ?)
 
-```console
+```shell
 sudo certbot renew --dry-run
 ```
     
@@ -75,7 +75,7 @@ Documentation pour générer un certificat wildcard
 
     https://www.nikio.io/infrastructure/lets-encrypt-wildcard-certificate-with-certbot/
  
-```console
+```shell
 wget https://dl.google.com/go/go1.11.5.linux-amd64.tar.gz
 
 # cd ~/
@@ -96,7 +96,7 @@ Exemple de configuration (avec le module apache, elle est adaptée AUTOMATIQUEME
 Redémarrer apache
 -----------------
 
-```console
+```shell
 service apache2 restart
 ```
 
@@ -129,7 +129,7 @@ Problèmes récurrents
     
 * Migrer un certificat d'un serveur nginx vers un serveur apache, ouvrir le fichier référencé en tant que SSLCertificateFile dans la conf nginx et le couper en deux, la partie certificat vers un fichier server.crt et la partie key vers un fichier server.key, référencer ensuite ces deux fichiers dans le fichier de conf apache du projet tel que:
 
-```console
+```shell
 <VirtualHost *:443>
 	DocumentRoot ...
 	ServerName ...
