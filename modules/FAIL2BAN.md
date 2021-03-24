@@ -17,21 +17,21 @@ Fail 2 ban
 Installation
 ------------
 
-```console
+```shell
 sudo apt-get install fail2ban
 ```
     
 Configuration
 -------------
 
-```console
+```shell
 cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local && 
 nano /etc/fail2ban/jail.local
 ```
     
 Modifier comme ceci
 
-```console
+```shell
 #### [DEFAULT]
 
     ignoreip = 127.0.0.1/8 ##YOUR_HOME_IP##
@@ -84,7 +84,7 @@ Modifier comme ceci
 Redémarrer
 ----------
 
-```console
+```shell
 sudo service fail2ban restart
 ```
     
