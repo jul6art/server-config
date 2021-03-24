@@ -34,7 +34,7 @@ INSERT INTO `comptes` ( `email` , `password` , `quota` , `etat` , `imap` , `pop3
 ('contact@VOTRE_DOMAINE.com', ENCRYPT( 'VOTRE_PASS_MAIL' ) , '0', '1', '1', '1');
 ```
     
-```console
+```shell
 telnet 127.0.0.1 25
 ehlo domaine.extension
 mail from: <adresse@domaine.exten>
