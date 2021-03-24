@@ -18,20 +18,20 @@ Installation
 ------------
 
 Installation de ant
-```console
+```shell
 sudo apt-get install ant
 ```
     
 Installation de Java
 
-```console
+```shell
 sudo apt-get install openjdk-8-jdk
 ```
 > Or JDK 11 until debian 10
     
 Installation de Jenkins
 
-```console
+```shell
 wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add - &&
 sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list' &&
 sudo apt-get update &&
@@ -42,7 +42,7 @@ sudo ufw allow 8080
     
 Tester le statut
 
-```console
+```shell
 sudo ufw status
 ```
 
@@ -82,13 +82,13 @@ Redirection vers un nom de domaine
 ----------------------------------
 Activer les modules apaches
 
-```console
+```shell
 sudo a2enmod headers proxy proxy_http ssl proxy_wstunnel rewrite
 ```
     
 Redémarrer Apache
 
-```console
+```shell
 service apache2 restart
 ```
     
