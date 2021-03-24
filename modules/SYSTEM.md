@@ -14,13 +14,13 @@ Paquets de base
 
 Aliases
 
-```console
+```shell
 nano .bashrc
 ```
     
 Modifier comme ceci
 
-```console
+```shell
 if [ "$TERM" != "dumb" ]; then
     eval "`dircolors -b`"
     alias ls='ls --color=auto'
@@ -36,7 +36,7 @@ PS1="\u [\w] > "
 
 Mise à jour du system
   
-```console
+```shell
 source .bashrc && 
 apt-get update -y &&
 apt-get install build-essential -y
@@ -44,7 +44,7 @@ apt-get install build-essential -y
     
 Installation des paquets de base
 
-```console
+```shell
 apt-get install sudo git
 ```
    
