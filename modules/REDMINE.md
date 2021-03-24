@@ -19,14 +19,14 @@ Créer un serveur virtuel
 
 Installation
 
-```console
+```shell
 sudo apt-get install redmine redmine-mysql libapache2-mod-passenger
 ```
 
 
 Activer les modules Apache
 
-```console
+```shell
 a2enmod passenger rewrite
 ```
 
@@ -46,13 +46,13 @@ Fichier de configuration
 
 Puis
 
-```console
+```shell
 nano /etc/redmine/default/configuration.yml
 ```
     
 Et ajouter
 
-```console
+```shell
 production:
  email_delivery:
   delivery_method: sendmail
@@ -60,7 +60,7 @@ production:
  
 Puis 
 
-```console
+```shell
 nano /etc/redmine/default/database.yml
 ```
     
@@ -69,7 +69,7 @@ Et ajouter database support user "support" in configuration of database
   
 Redémarrer Apache
 
-```console
+```shell
 service apache2 restart
 ```
 
@@ -79,7 +79,7 @@ service apache2 restart
 
 Corrections
 
-```console
+```shell
 chown -rf support:www-data /usr/share/redmine
 chown -rf support:www-data /usr/share/redmine/Gemfile.lock
 chown -rf support:www-data /etc/redmine
@@ -93,7 +93,7 @@ chmod -R 755 /var/lib/redmine/files
 
 Plugins
  
-```console
+```shell
 cd /usr/share/redmine/plugins &&
 git clone https://github.com/dergachev/redmine_git_remote &&
 service apache2 restart
