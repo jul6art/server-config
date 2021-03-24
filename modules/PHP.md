@@ -19,12 +19,12 @@ Installation
 
 First install CURL
 
-```console
+```shell
 sudo apt-get -y install curl
 ```
 Then you can install PHP
 
-```console
+```shell
 sudo apt-get -y install apt-transport-https lsb-release ca-certificates &&
 sudo curl -ssL -o /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/	apt.gpg &&
 sudo sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" 	> /etc/apt/sources.list.d/php.list' &&
@@ -35,7 +35,7 @@ sudo apt-get install php5.6-fpm php7.0-fpm php7.1-fpm php7.2-fpm php7.3-fpm php7
 	
 Modules PHP
 
-```console
+```shell
 sudo apt-get install php5.6-intl php5.6-soap php5.6-gd php5.6-mbstring php5.6-mcrypt php5.6-curl php5.6-zip php5.6-opcache php5.6-mysql php5.6-pgsql php5.6-xml php5.6-apc -y &&
 sudo apt-get install php7.0-intl php7.0-soap php7.0-gd php7.0-mbstring php7.0-mcrypt php7.0-curl php7.0-zip php7.0-opcache php7.0-mysql php7.0-pgsql php7.0-xml php7.0-apc -y &&
 sudo apt-get install php7.1-intl php7.1-soap php7.1-gd php7.1-mbstring php7.1-mcrypt php7.1-curl php7.1-zip php7.1-opcache php7.1-mysql php7.1-pgsql php7.1-xml php7.1-apc -y &&
@@ -46,7 +46,7 @@ sudo apt-get install php7.4-intl php7.4-soap php7.4-gd php7.4-mbstring php7.4-cu
 	
 Configuration (php.ini)
 
-```console
+```shell
 expose_php = Off     
 ```
 
@@ -54,7 +54,7 @@ expose_php = Off
     
 Manipulation d'images
 
-```console
+```shell
 sudo apt-get install jpegoptim optipng pngquant gifsicle -y
 
 curl -sL https://deb.nodesource.com/setup_11.x | bash -
@@ -64,7 +64,7 @@ sudo apt-get install -y nodejs npm && sudo npm install -g svgo
 
 Composer
 
-```console
+```shell
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 
 php -r "if (hash_file('sha384', 'composer-setup.php') === 'c5b9b6d368201a9db6f74e2611495f369991b72d9c8cbd3ffbc63edff210eb73d46ffbfce88669ad33695ef77dc76976') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
@@ -78,7 +78,7 @@ mv composer.phar /usr/local/bin/composer
 
 Module apache proxy_fcgi
 
-```console
+```shell
 a2enmod proxy_fcgi &&
 service apache2 restart
 ```
@@ -96,20 +96,20 @@ Configuration (sauf si virtualmin est installé)
 
 changer
 
-```console
+```shell
 listen = /run/php/php5.6-fpm.sock
 ```
 
 par
 	
-```console
+```shell
 listen = 127.0.0.1:9056
 ```
 	
 Utilisation dans un fichier de conf apache (sauf si virtualmin est installé)
 ----------------------------------------------------------------------------
 
-```console
+```shell
 <FilesMatch "\.php$">
         Require all granted
         SetHandler proxy:fcgi://127.0.0.1:9056
