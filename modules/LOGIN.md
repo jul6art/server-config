@@ -14,32 +14,32 @@ Première connexion
 
 Changer le mot de passe de l'utilisateur root
     
-```console
+```shell
 passwd root   
 ```
     
 Récupérer la clef ssh de notre machine
 
-```console
+```shell
 cat ~/.ssh/id_rsa.pub
 ```
     
 Ajouter la clef au serveur
 
-```console
+```shell
 mkdir ~/.ssh && 
 nano ~/.ssh/authorized_keys
 ```
     
 Désactiver le timeout ssh
 
-```console
+```shell
 nano /etc/ssh/sshd_config
 ```
     
 Et ajouter les paramètres suivants
 
-```console
+```shell
 TCPKeepAlive yes
 ClientAliveInterval 60
 ClientAliveCountMax 720
@@ -47,7 +47,7 @@ ClientAliveCountMax 720
     
 Redémarrer le service ssh
 
-```console
+```shell
 service ssh restart
 ```
    
