@@ -16,21 +16,21 @@ Migration complète d'un serveur
 
 Vérifier que l'OS est en place
 
-```console
+```shell
 uname -a
 ```
     
 Vérifier l'accès au serveur source
 
 
-```console
+```shell
 ssh root@IP_DU_SERVEUR_SOURCE
 ```
     
 Vérifier que rsync est installé
 
 
-```console
+```shell
 which rsync
 ```
     
@@ -55,7 +55,7 @@ Liste des dossiers à exclaire du rsync
     
 Commande à lancer
 
-```console
+```shell
 rsync -auHxv –numeric-ids --exclude '/etc/fstab' --exclude '/etc/network/*' --exclude '/proc/*' --exclude '/tmp/*' --exclude '/sys/*' --exclude '/dev/*' --exclude '/mnt/*' --exclude '/boot/*' --exclude '/root/*' --exclude '/etc/netplan/*' --exclude '/etc/systemd/network/*' --exclude '/etc/udev' --exclude '/etc/lvm' --exclude '/lib/modues' root@51.15.140.136:/* /
 ```
 
@@ -64,7 +64,7 @@ rsync -auHxv –numeric-ids --exclude '/etc/fstab' --exclude '/etc/network/*' --
 Redémarrer la machine
 ----------------------------------------------------------
 
-```console
+```shell
 reboot
 ```
 
