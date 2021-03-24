@@ -16,7 +16,7 @@ Installation Apache sans Virtualmin
 
 Installation
 ------------
-```console
+```shell
 sudo apt-get install apache2 -y &&
 service apache2 restart &&
 a2enmod rewrite
@@ -25,7 +25,7 @@ a2enmod rewrite
 SSL
 ---
 
-```console
+```shell
 a2enmod ssl &&
 service apache2 restart &&
 apt-get install python-certbot-apache -y
@@ -34,14 +34,14 @@ apt-get install python-certbot-apache -y
 Mariadb
 -------
 
-```console
+```shell
 sudo apt-get install mariadb-server -y &&
 service apache2 restart
 ```
 
 to start mariadb
 
-```console
+```shell
 mariadb
 ```
 
@@ -55,7 +55,7 @@ use mysql;
 Postgres 11
 -----------
 
-```console
+```shell
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main"  > /etc/apt/sources.list.d/pgdg.list' && 
@@ -64,7 +64,7 @@ sudo apt -y install postgresql-11
 ```
 
 to start postgres
-```console
+```shell
 su postgres
 psql
 ```
