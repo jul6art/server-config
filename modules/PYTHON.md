@@ -17,7 +17,7 @@ Python
 Installation (SAUF POUR UN PROJET DJANGO)
 -----------------------------------------
 
-```console
+```shell
 sudo apt-get install python3-pip python3-dev python3-setuptools libjpeg-dev -y &&
 sudo apt-get install libtiff5-dev libjpeg62-turbo-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk -y &&
 sudo apt-get install libapache2-mod-wsgi-py3 python3-mysqldb default-libmysqlclient-dev -y && 
@@ -27,7 +27,7 @@ pip3 install virtualenv mysqlclient
 Déploiement d'un projet Django
 ------------------------------
 
-```console
+```shell
 cd DOSSIER 
 
 python3 -m virtualenv myprojectenv &&
@@ -79,7 +79,7 @@ Créer vhost
 
 Nouvelles commandes
 
-```console
+```shell
 virtualenv myprojectenv &&
 source myprojectenv/bin/activate &&
 apt-get install libjpeg-dev &&
@@ -92,7 +92,7 @@ nano auto_resultat/settings.py
     
 Paramètres
 
-```console
+```shell
 clef:  x2_i^0(a@wx7jqa0c=ub1@9*fmyx0njf@+_vadsvmywz+jm(2l debug false SERVER_EMAIL
 
 DATABASES = {
@@ -121,14 +121,14 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 Nouvelles commandes
 
-```console
+```shell
 python manage.py makemigrations  &&    
 python manage.py migrate     
 ```               
     
 > Si marche pas, python manage.py migrate --fake
 
-```console
+```shell
 python manage.py collectstatic &&
 python manage.py runserver 0.0.0.0:8000
 
@@ -144,13 +144,13 @@ nano /etc/apache2/sites-available/000-default.conf
 
 > peut corriger certaines erreurs     
 
-```console
+```shell
 pip install -r requirements.txt
 ```
 
 Redémarrer apache
 
-```console
+```shell
 service apache2 restart
 ```
 
