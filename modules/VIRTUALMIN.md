@@ -19,14 +19,14 @@ Installation
 
 Téléchargement
 
-```console
+```shell
 wget http://software.virtualmin.com/gpl/scripts/install.sh
 ```
 
 Installation 
 > dites oui à la question posée lors de l'installation et exemple de hostname défini si demandé: devinthehood01.devinthehood.com
 
-```console
+```shell
 source install.sh 
 ```
     
@@ -55,25 +55,25 @@ The mailman queue processor /usr/lib/mailman/bin/qrunner is not running on your 
 Mots-clefs: map, dependant
 Sender Dependent Outgoing IP Address
 
-```console
+```shell
 nano /etc/postfix/main.cf
 ```
 
 > Chercher la ligne "sender_dependent_default_transport_maps" . Ajouter cette ligne si elle n'existe pas encore
 
-```console
+```shell
 sender_dependent_default_transport_maps = hash:/etc/postfix/dependent
 ```
     
 Permettre les emails smtp depuis Django
 
-```console
+```shell
 smtpd_sender_restrictions = permit_mynetworks, warn_if_reject
 ```
     
 Adapter pour respecter ceci
     
-```console
+```shell
 myhostname = ##REVERSE_DNS_IPV4##
 myorigin = ##REVERSE_DNS_IPV4##
 mydestination = localhost.localdomain, localhost, ##REVERSE_DNS_IPV4##
@@ -87,7 +87,7 @@ inet_protocols = ipv4
 
 Commandes à lancer
 
-```console
+```shell
 touch /etc/postfix/dependent && postmap hash:/etc/postfix/dependent &&
 a2dissite 000-default.conf &&
 service postfix restart && service apache2 restart
@@ -107,7 +107,7 @@ puis webmin/others/php configuration/other settings et changer la timezone pour 
     
 Restauration en ligne de commandes
 
-```console
+```shell
 virtualmin restore-domain --source /path/FILE.tar.gz --all-domains --all-features
 ```
     
