@@ -45,7 +45,7 @@ apt-get install build-essential -y
 Installation des paquets de base
 
 ```shell
-apt-get install sudo git
+apt-get install sudo git -y
 ```
    
 
