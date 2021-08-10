@@ -29,8 +29,8 @@ sudo apt-get -y install apt-transport-https lsb-release ca-certificates &&
 sudo curl -ssL -o /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/	apt.gpg &&
 sudo sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" 	> /etc/apt/sources.list.d/php.list' &&
 sudo apt-get update &&
-sudo apt-get install php5.6-cli php7.0-cli php7.1-cli php7.2-cli php7.3-cli php7.4-cli -y &&
-sudo apt-get install php5.6-fpm php7.0-fpm php7.1-fpm php7.2-fpm php7.3-fpm php7.4-fpm -y
+sudo apt-get install php5.6-cli php7.0-cli php7.1-cli php7.2-cli php7.3-cli php7.4-cli php8.0-cli -y &&
+sudo apt-get install php5.6-fpm php7.0-fpm php7.1-fpm php7.2-fpm php7.3-fpm php7.4-fpm php8.0-fpm -y
 ```
 	
 Modules PHP
@@ -41,7 +41,8 @@ sudo apt-get install php7.0-intl php7.0-soap php7.0-gd php7.0-mbstring php7.0-mc
 sudo apt-get install php7.1-intl php7.1-soap php7.1-gd php7.1-mbstring php7.1-mcrypt php7.1-curl php7.1-zip php7.1-opcache php7.1-mysql php7.1-pgsql php7.1-xml php7.1-apc -y &&
 sudo apt-get install php7.2-intl php7.2-soap php7.2-gd php7.2-mbstring php7.2-curl php7.2-zip php7.2-opcache php7.2-mysql php7.2-pgsql php7.2-xml php7.2-apc -y &&
 sudo apt-get install php7.3-intl php7.3-soap php7.3-gd php7.3-mbstring php7.3-curl php7.3-zip php7.3-opcache php7.3-mysql php7.3-pgsql php7.3-xml php7.3-apc -y &&
-sudo apt-get install php7.4-intl php7.4-soap php7.4-gd php7.4-mbstring php7.4-curl php7.4-zip php7.4-opcache php7.4-mysql php7.4-pgsql php7.4-xml php7.4-apc -y
+sudo apt-get install php7.4-intl php7.4-soap php7.4-gd php7.4-mbstring php7.4-curl php7.4-zip php7.4-opcache php7.4-mysql php7.4-pgsql php7.4-xml php7.4-apc -y &&
+sudo apt-get install php8.0-intl php8.0-soap php8.0-gd php8.0-mbstring php8.0-curl php8.0-zip php8.0-opcache php8.0-mysql php8.0-pgsql php8.0-xml php8.0-apc -y
 ```
 	
 Configuration (php.ini)
