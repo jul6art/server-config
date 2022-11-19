@@ -29,8 +29,8 @@ sudo apt-get -y install apt-transport-https lsb-release ca-certificates &&
 sudo curl -ssL -o /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/	apt.gpg &&
 sudo sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" 	> /etc/apt/sources.list.d/php.list' &&
 sudo apt-get update &&
-sudo apt-get install php5.6-cli php7.0-cli php7.1-cli php7.2-cli php7.3-cli php7.4-cli php8.0-cli -y &&
-sudo apt-get install php5.6-fpm php7.0-fpm php7.1-fpm php7.2-fpm php7.3-fpm php7.4-fpm php8.0-fpm -y
+sudo apt-get install php7.4-cli php8.0-cli php8.1-cli -y &&
+sudo apt-get install php7.4-fpm php8.0-fpm php8.1-fpm -y
 ```
 	
 Modules PHP
