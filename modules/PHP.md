@@ -59,7 +59,7 @@ Manipulation d'images
 ```shell
 sudo apt-get install jpegoptim optipng pngquant gifsicle -y
 
-curl -sL https://deb.nodesource.com/setup_11.x | bash -
+curl -sL https://deb.nodesource.com/setup_16.x | bash -
 
 sudo apt-get install -y nodejs npm && sudo npm install -g svgo
 ```
@@ -69,7 +69,7 @@ Composer
 ```shell
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 
-php -r "if (hash_file('sha384', 'composer-setup.php') === 'c5b9b6d368201a9db6f74e2611495f369991b72d9c8cbd3ffbc63edff210eb73d46ffbfce88669ad33695ef77dc76976') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 
 php composer-setup.php
 
