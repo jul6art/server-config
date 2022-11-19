@@ -42,7 +42,8 @@ sudo apt-get install php7.1-intl php7.1-soap php7.1-gd php7.1-mbstring php7.1-mc
 sudo apt-get install php7.2-intl php7.2-soap php7.2-gd php7.2-mbstring php7.2-curl php7.2-zip php7.2-opcache php7.2-mysql php7.2-pgsql php7.2-xml php7.2-apc -y &&
 sudo apt-get install php7.3-intl php7.3-soap php7.3-gd php7.3-mbstring php7.3-curl php7.3-zip php7.3-opcache php7.3-mysql php7.3-pgsql php7.3-xml php7.3-apc -y &&
 sudo apt-get install php7.4-intl php7.4-soap php7.4-gd php7.4-mbstring php7.4-curl php7.4-zip php7.4-opcache php7.4-mysql php7.4-pgsql php7.4-xml php7.4-apc -y &&
-sudo apt-get install php8.0-intl php8.0-soap php8.0-gd php8.0-mbstring php8.0-curl php8.0-zip php8.0-opcache php8.0-mysql php8.0-pgsql php8.0-xml php8.0-apc -y
+sudo apt-get install php8.0-intl php8.0-soap php8.0-gd php8.0-mbstring php8.0-curl php8.0-zip php8.0-opcache php8.0-mysql php8.0-pgsql php8.0-xml php8.0-apc -y &&
+sudo apt-get install php8.1-intl php8.1-soap php8.1-gd php8.1-mbstring php8.1-curl php8.1-zip php8.1-opcache php8.1-mysql php8.1-pgsql php8.1-xml php8.1-apc -y
 ```
 	
 Configuration (php.ini)
