@@ -54,6 +54,13 @@ nano /etc/sites-enabled/site.conf
 > supprimer le RedirectMatch qui est dans le virtual host :443
  pour éviter une boucle infinie
  
+ :warning: modifier les **public_html_path** différents de **public_html** dans le fichier de config de chaque domain pour éviter les problèmes de renew
+
+```shell
+virtualmin list-domains --domain example.com --id-only
+/etc/webmin/virtual-server/domains/ID_DU_DOMAIN
+```
+ 
 Installation sans Virtualmin
 ----------------------------
 
