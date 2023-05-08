@@ -88,7 +88,7 @@ service apache2 restart
     
 > Si virtualmin est installé, les dernières étapes sont d'installer les modules phpX.X-cgi et redémarrer le fpm
 
->   sudo apt-get install php7.4-cgi php8.0-cgi php8.1-cgi -y
+>   sudo apt-get install php7.4-cgi php8.0-cgi php8.1-cgi php8.2-cgi -y
     
 Configuration (sauf si virtualmin est installé)
 -----------------------------------------------
