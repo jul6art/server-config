@@ -29,8 +29,8 @@ sudo apt-get -y install apt-transport-https lsb-release ca-certificates &&
 sudo curl -ssL -o /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/	apt.gpg &&
 sudo sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" 	> /etc/apt/sources.list.d/php.list' &&
 sudo apt-get update &&
-sudo apt-get install php7.4-cli php8.0-cli php8.1-cli -y &&
-sudo apt-get install php7.4-fpm php8.0-fpm php8.1-fpm -y
+sudo apt-get install php7.4-cli php8.0-cli php8.1-cli php8.2-cli -y &&
+sudo apt-get install php7.4-fpm php8.0-fpm php8.1-fpm php8.2-fpm -y
 ```
 	
 Modules PHP
@@ -43,7 +43,8 @@ sudo apt-get install php7.2-intl php7.2-soap php7.2-gd php7.2-mbstring php7.2-cu
 sudo apt-get install php7.3-intl php7.3-soap php7.3-gd php7.3-mbstring php7.3-curl php7.3-zip php7.3-opcache php7.3-mysql php7.3-pgsql php7.3-xml php7.3-apc -y &&
 sudo apt-get install php7.4-intl php7.4-soap php7.4-gd php7.4-mbstring php7.4-curl php7.4-zip php7.4-opcache php7.4-mysql php7.4-pgsql php7.4-xml php7.4-apc -y &&
 sudo apt-get install php8.0-intl php8.0-soap php8.0-gd php8.0-mbstring php8.0-curl php8.0-zip php8.0-opcache php8.0-mysql php8.0-pgsql php8.0-xml php8.0-apc -y &&
-sudo apt-get install php8.1-intl php8.1-soap php8.1-gd php8.1-mbstring php8.1-curl php8.1-zip php8.1-opcache php8.1-mysql php8.1-pgsql php8.1-xml php8.1-apc -y
+sudo apt-get install php8.1-intl php8.1-soap php8.1-gd php8.1-mbstring php8.1-curl php8.1-zip php8.1-opcache php8.1-mysql php8.1-pgsql php8.1-xml php8.1-apc -y &&
+sudo apt-get install php8.2-intl php8.2-soap php8.2-gd php8.2-mbstring php8.2-curl php8.2-zip php8.2-opcache php8.2-mysql php8.2-pgsql php8.2-xml php8.2-apc -y
 ```
 	
 Configuration (php.ini)
